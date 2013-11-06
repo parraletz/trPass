@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/jquery.js"><\/script>')</script>
+    <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+    <script src="{{ STATIC_URL }}js/plugins.js"></script>
+    <script src="{{ STATIC_URL }}/js/application.js"></script>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+
+</head>
+<body id="index">
+{% block content %}{% endblock %}
+</body>
+</html>
